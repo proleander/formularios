@@ -84,21 +84,37 @@
 
     </div>       
 
-    <div class="pesoEntrada">
-
-        <label for="peso"><strong>Peso de Entrada: </strong></label>
-        <input type="text" name= 0 id="" reqpesouired>
-
-    </div>
+    <fieldset class="pesos">
 
     <div class="pesoSaida">
 
-        <label for="peso2"><strong>Peso de Saída: </strong></label>
-        <input type="text" name="Peso da saida" id="" reqpesouired>
+        <label for="peso2"><strong>Peso de Entrada: </strong></label>
+        <input id="txt1" type="number" min="0" max="60000" value="" onfocus="calcular()" required/>
+
+        
+
+    <div class="peso">
+
+        <label for="peso1"><strong>Peso de Saída: </strong>  <span class="meukg"> KG </span> </label>
+        <input id="txt2" type="number" min="0" max="60000" value="" onblur="calcular()" required/>
 
     </div>
 
-    <fieldset class="grupo">
+    </div>
+
+    <div class="peso-liquido">
+
+        <label for="peso"><strong> Peso Liquido: KG </strong></label>
+        <input id="result" type="number" min="0" max="60000" required/>
+
+
+
+
+    </div>
+
+</fieldset>
+
+   <!-- <fieldset class="grupo">
         <div class="campo">
             <label><strong>Informe a Pesagem:</strong> </label><br><br>
             <input type="checkbox" id="tonner1" name="Modelo" value="Tonner 85">
@@ -112,7 +128,7 @@
             <input type="checkbox" id="tinta2" name="Modelo" value="Colorida">
             <label for="colorida">Tinta Colorida Epson</label>
         </div>
-        <div class="campo">
+        <div class="campo">   -->
            
             <button onclick="window.print()">Imprimir</button>     <!-- Comando para imprimir formulário  ou a página web -->
         </div>
@@ -125,6 +141,6 @@
     <!-- <button class="button" value="Print this page" onClick="window.print()">Imprimir </button>   -->
    
 <!--<button onclick="window.print()">Imprimir</button>-->
-    
+<script src="script.js"></script>
 </body>
 </html>

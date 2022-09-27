@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 /*.cabecalho {width: 60%; float: right; padding: 3% 4%;}*/
-.logo {width: 96px; height:96px; float: left; background: url(../balan_sis/fribal_logo.png)center center/96px no-repeat; 
+.logo {width: 96px; height:96px; float: left; background: url(../formularios/fribal_logo.png)center center/96px no-repeat; 
 font-size: 0;}
 body {
   background-color: #f7f7f7;
@@ -165,13 +165,27 @@ input[type='number'] {
 }
 
 .pesoSaida {
-
+  
+  display: flex;
+  flex-direction: row;
   padding: 5px ;
+  font-weight: 400;
+  font-family: 'Righteous', cursive;
+  font-size: 16px;
+}
+
+.pesoSaida input {
+
+display: flex;
+font-family: 'Sarala', cursive;
+font-weight: 400;
+font-size: 40px;
+
 }
 
 .pesoEntrada {
 
-  padding: 5px;
+  padding: 10px;
 }
 
 .cmapo {
