@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solicitação de Tonner Fribal</title>
+    <title>BalanSis</title>
 
     <link rel ="stylesheet" href="style.css"> <!-- Aqui integramos o nosso CSS -->
 </head>
@@ -82,39 +82,29 @@
         </select>
 
 
-    </div>       
+    </div>   
+    
+   
 
-    <fieldset class="pesos">
+    <div class="pesoEntrada">
 
-    <div class="pesoSaida">
-
-        <label for="peso2"><strong>Peso de Entrada: </strong></label>
+        <label for="user_name"><strong>Peso de Entrada: KG </strong></label>
         <input id="txt1" type="number" min="0" max="60000" value="" onfocus="calcular()" required/>
 
-        
 
-    <div class="peso">
-
-        <label for="peso1"><strong>Peso de Saída: </strong>  <span class="meukg"> KG </span> </label>
+        <label for="peso"><strong> Saída: KG </strong></label>
         <input id="txt2" type="number" min="0" max="60000" value="" onblur="calcular()" required/>
 
     </div>
 
-    </div>
+    <div class="pesoSaida">
 
-    <div class="peso-liquido">
-
-        <label for="peso"><strong> Peso Liquido: KG </strong></label>
+        <label class= "pesoSaida" for="peso2"><strong>Peso Liquido: KG  </strong></label>
         <input id="result" type="number" min="0" max="60000" required/>
 
-
-
-
     </div>
-
-</fieldset>
-
-   <!-- <fieldset class="grupo">
+<!--
+    <fieldset class="grupo">
         <div class="campo">
             <label><strong>Informe a Pesagem:</strong> </label><br><br>
             <input type="checkbox" id="tonner1" name="Modelo" value="Tonner 85">
@@ -128,7 +118,9 @@
             <input type="checkbox" id="tinta2" name="Modelo" value="Colorida">
             <label for="colorida">Tinta Colorida Epson</label>
         </div>
-        <div class="campo">   -->
+        <div class="campo">
+
+            -->
            
             <button onclick="window.print()">Imprimir</button>     <!-- Comando para imprimir formulário  ou a página web -->
         </div>
@@ -137,10 +129,10 @@
 
     </form>
 
-   
+    <script src="script.js"></script>
     <!-- <button class="button" value="Print this page" onClick="window.print()">Imprimir </button>   -->
    
 <!--<button onclick="window.print()">Imprimir</button>-->
-<script src="script.js"></script>
+    
 </body>
 </html>

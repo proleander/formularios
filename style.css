@@ -165,27 +165,50 @@ input[type='number'] {
 }
 
 .pesoSaida {
-  
-  display: flex;
-  flex-direction: row;
+
   padding: 5px ;
-  font-weight: 400;
-  font-family: 'Righteous', cursive;
-  font-size: 16px;
+ 
+
 }
 
-.pesoSaida input {
+.pesoSaida-dados {
 
-display: flex;
-font-family: 'Sarala', cursive;
-font-weight: 400;
-font-size: 40px;
+  padding: 5px ;
+  font-weight: 400;
+  font-size: 44px;
 
 }
 
 .pesoEntrada {
 
-  padding: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Righteous' cursive;
+  font-size: 22px;
+
+  
+}
+
+
+.pesoEntrada input {
+  
+  display: flex;
+  font-weight: 400;
+  font-family: 'Righteous' cursive;
+  font-size: 40px;
+
+
+}
+
+.pesoSaida input {
+
+  display: flex;
+  font-weight: 400;
+  font-family: 'Righteous' cursive;
+  font-size: 40px;
+
+
 }
 
 .cmapo {
@@ -195,4 +218,14 @@ font-size: 40px;
 
 .transactions li:hover .delete-btn {
   opacity: 1;
+}
+
+
+.testando::input {
+
+  display: flex;
+  font-weight: 400;
+  font-family: 'Righteous' cursive;
+  font-size: 40px;
+
 }
