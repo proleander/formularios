@@ -27,8 +27,11 @@ body {
  
 
 .container {
+  display: flex;
+  flex-direction: row;
   margin: 30px auto;
-  width: 350px;
+  width: 780px;
+  
 }
 
 h1 {
@@ -164,68 +167,30 @@ input[type='number'] {
   transition: opacity 0.3s ease;
 }
 
+
+
+  
+
+
 .pesoSaida {
-
-  padding: 5px ;
- 
-
-}
-
-.pesoSaida-dados {
-
-  padding: 5px ;
-  font-weight: 400;
-  font-size: 44px;
-
-}
-
-.pesoEntrada {
-
-  padding: 5px;
+  
   display: flex;
   flex-direction: row;
-  font-family: 'Righteous' cursive;
-  font-size: 22px;
-
-  
-}
+ 
 
 
-.pesoEntrada input {
-  
-  display: flex;
-  font-weight: 400;
-  font-family: 'Righteous' cursive;
-  font-size: 40px;
-
-
-}
 
 .pesoSaida input {
 
-  display: flex;
-  font-weight: 400;
-  font-family: 'Righteous' cursive;
-  font-size: 40px;
-
+display: flex;
+justify-content: space-between;
+font-family: 'Sarala', cursive;
+font-weight: 400;
+font-size: 45px;
 
 }
 
-.cmapo {
-
-  padding: 5px;
-}
 
 .transactions li:hover .delete-btn {
   opacity: 1;
-}
-
-
-.testando::input {
-
-  display: flex;
-  font-weight: 400;
-  font-family: 'Righteous' cursive;
-  font-size: 40px;
-
 }

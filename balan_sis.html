@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BalanSis</title>
+    <title>Solicitação de Tonner Fribal</title>
 
     <link rel ="stylesheet" href="style.css"> <!-- Aqui integramos o nosso CSS -->
 </head>
@@ -15,7 +15,7 @@
 </header>
     
     <!-- Abaixo fizemos um link sheetmonkey e usamos o excel como base de dados para salvar os form -->
-<form action ="https://api.sheetmonkey.io/form/9tPARAHUiEuFgvzMQJnvaF" method="post"      
+<form action ="https://api.sheetmonkey.io/form/fZzPdErD1vW77nobAYss7y" method="post"      
     <div class="campo">
         <header class="cabecalho">
             <h1 class="logo" >Logo</h1></a>
@@ -82,29 +82,40 @@
         </select>
 
 
-    </div>   
-    
-   
+    </div>       
 
-    <div class="pesoEntrada">
-
-        <label for="user_name"><strong>Peso de Entrada: KG </strong></label>
-        <input id="txt1" type="number" min="0" max="60000" value="" onfocus="calcular()" required/>
-
-
-        <label for="peso"><strong> Saída: KG </strong></label>
-        <input id="txt2" type="number" min="0" max="60000" value="" onblur="calcular()" required/>
-
-    </div>
+    <fieldset class="container">
 
     <div class="pesoSaida">
 
-        <label class= "pesoSaida" for="peso2"><strong>Peso Liquido: KG  </strong></label>
-        <input id="result" type="number" min="0" max="60000" required/>
+        <label for="peso2"><strong>Peso de Entrada: </strong></label>
+        <input id="txt1" type="text" min="0" max="60000" value="" onfocus="calcular()" required/>
+
+        
+
+    
+
+        <label for="peso1"><strong>Peso de Saída: </strong>  <span class="meukg"> KG </span> </label>
+        <input id="txt2" type="text" min="0" max="60000" value="" onblur="calcular()" required/>
+
+    
+
+   
+
+    
+
+        <label for="peso"><strong> Peso Liquido: KG </strong></label>
+        <input id="result" type="text" min="0" max="60000" required/>
+
+
+
 
     </div>
-<!--
-    <fieldset class="grupo">
+
+
+</fieldset>
+
+   <!-- <fieldset class="grupo">
         <div class="campo">
             <label><strong>Informe a Pesagem:</strong> </label><br><br>
             <input type="checkbox" id="tonner1" name="Modelo" value="Tonner 85">
@@ -118,9 +129,7 @@
             <input type="checkbox" id="tinta2" name="Modelo" value="Colorida">
             <label for="colorida">Tinta Colorida Epson</label>
         </div>
-        <div class="campo">
-
-            -->
+        <div class="campo">   -->
            
             <button onclick="window.print()">Imprimir</button>     <!-- Comando para imprimir formulário  ou a página web -->
         </div>
@@ -129,10 +138,10 @@
 
     </form>
 
-    <script src="script.js"></script>
+   
     <!-- <button class="button" value="Print this page" onClick="window.print()">Imprimir </button>   -->
    
 <!--<button onclick="window.print()">Imprimir</button>-->
-    
+<script src="script.js"></script>
 </body>
 </html>
