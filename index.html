@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BalanSis</title>
+
+    <link rel ="stylesheet" href="style.css"> <!-- Aqui integramos o nosso CSS -->
+</head>
+
+<body>
+<header class="cabecalho">
+   <!--- <a href="balan.html" <h1 class="logo" >Logo</h1></a>
+</header>
+    
+    <!-- Abaixo fizemos um link sheetmonkey e usamos o excel como base de dados para salvar os form -->
+<form action ="https://api.sheetmonkey.io/form/fZzPdErD1vW77nobAYss7y" method="post"      
+    <div class="campo">
+        <header class="cabecalho">
+            <h1 class="logo" >Logo</h1></a>
+       </header>
+        <h1 class="titulo"><center>CONTROLE DE PESAGEM</center></h1>
+      
+        <p id="subtitulo"><center>Complete as informações do motorista e Caminhão:</center></p> 
+      
+        <!--<img src="\\192.168.32.252\f\T.I imperatriz\app\formularios\Pesagem_Balan\fribal_logo.png" alt="Image" height="62" width="62"> -->
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome Motorista</strong> </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="campo">
+                <label for="setor"><strong>Placa</strong></label>
+                <input type="text" name="setor" id="setor" required>
+
+                <div class="data">
+                    <label for="data"><strong>Data Entrada</strong></label> 
+                    <input type="date" name="Data" id="date" required>
+                    
+
+                </label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+
+            <label for="marca"><strong>Tipo de Carga: </strong></label>
+            <input type="text" name="marca da Impressora" id="marca" required>
+
+        </div>
+
+       <div class="cmapo"> 
+
+        <label><strong>Selecione o Tipo de caminhão: </strong> </label>
+        <label>
+            <input type="radio" name="Tipo de Recarga" value="Tinta-Pigmentada">Truck
+        </label>
+        <label>
+            <input type="radio" name="Tipo de Recarga" value="epson">Bi-Truck
+        </label>
+        <label>
+            <input type="radio" name="Tipo de Recarga" value="tonner">Madeira
+        </label>
+        <label>
+            <input type="radio" name="Tipo de Recarga" value="outro">Diversos
+        </label>
+       </div>
+
+    <div class="campo">
+        <label for="prioridade">Selecione o Fornecedor:</label>
+        <select id="prioridade">
+            <option select disabled value="">Selecione</option>
+            <option>Fornecedor 1</option>
+            <option>Fornecedor 2</option>
+            <option>Fornecedor 3</option> 
+            <option>Outro</option> 
+        </select>
+
+
+    </div>   
+    
+   
+
+    <div class="pesoEntrada">
+
+        <label for="pesoEntrada"><strong>Peso de Entrada: KG </strong></label>
+        <input id="txt1" type="number"  min="0" max="60000" step="0.1" onfocus="calcular()" />
+
+
+        <label for="pesoEntrada"><strong> Saída: KG </strong></label>
+        <input id="txt2" type="number" min="0" max="60000" step="0.1" onblur="calcular()" />
+
+    </div>
+
+    <div class="pesoSaida">
+
+        <label class= "pesoSaida" for="peso2"><strong>Peso Liquido: KG  </strong></label>
+        <input id="result" type="text" min="0" max="60000" />
+
+    </div>
+<!--
+    <fieldset class="grupo">
+        <div class="campo">
+            <label><strong>Informe a Pesagem:</strong> </label><br><br>
+            <input type="checkbox" id="tonner1" name="Modelo" value="Tonner 85">
+            <label for="tonner85">Tonner 85</label>
+            <input type="checkbox" id="tonner2" name="Modelo" value="Tonner 83">
+            <label for="tonner83">Tonner 83</label>
+            <input type="checkbox" id="tonner3" name="Modelo" value="Tonner Brother">
+            <label for="tonnerBrtoher">Tonner Brother</label>
+            <input type="checkbox" id="tinta1" name="Modelo" value="Pigmentada">
+            <label for="pigmentada">Tinta Preta Epson</label>
+            <input type="checkbox" id="tinta2" name="Modelo" value="Colorida">
+            <label for="colorida">Tinta Colorida Epson</label>
+        </div>
+        <div class="campo">
+
+            -->
+           
+            <button onclick="window.print()">Imprimir</button>     <!-- Comando para imprimir formulário  ou a página web -->
+        </div>
+    </fieldset>
+    <button class="btn" type="submit">Enviar Pesagem</button>   <!-- -->
+
+    </form>
+
+    <script src="script.js"></script>
+    <!-- <button class="button" value="Print this page" onClick="window.print()">Imprimir </button>   -->
+   
+<!--<button onclick="window.print()">Imprimir</button>-->
+    
+</body>
+</html>
