@@ -1,4 +1,4 @@
-# Sistema de Pesagem e Balanço Rodoviário - BalanSis
+# Sistema de Pesagem e Balança Rodoviário - BalanSis
 
 Bem-vindo ao **BalanSis**, um sistema de pesagem e balanço rodoviário desenvolvido para gerenciar e controlar a pesagem de veículos em rodovias. Este sistema permite o registro de informações sobre o motorista, o caminhão, e a carga, além de calcular o peso líquido do veículo.
 
