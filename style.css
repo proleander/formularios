@@ -10,8 +10,11 @@
   box-sizing: border-box;
 }
 /*.cabecalho {width: 60%; float: right; padding: 3% 4%;}*/
-.logo {width: 96px; height:96px; float: left; background: url(../formularios/fribal_logo.png)center center/96px no-repeat; 
+.logo {width: 96px; height:96px; float: left; background: url(fribal_logo.png)center center/96px no-repeat; 
 font-size: 0;}
+
+
+
 body {
   background-color: #f7f7f7;
   display: flex;
@@ -24,11 +27,20 @@ body {
  
 }
 
- 
+ .info1 {
+
+  font-size: 8px;
+  padding: -10 px;
+  text-align: left;
+
+ }
 
 .container {
+  display: flex;
+  flex-direction: row;
   margin: 30px auto;
-  width: 350px;
+  width: 680px;
+  
 }
 
 h1 {
@@ -51,6 +63,22 @@ h4 {
 .titulo {
 
   font-family: 'Righteous';
+}
+
+
+.login {
+
+  font-family: 'Righteous';
+  text-align: center;
+  color: #df1a1a;
+}
+
+.dados {
+
+  font-family: 'Righteous';
+  text-align: center;
+  color: #130c0c;
+
 }
 
 .subtitulo {
@@ -164,69 +192,30 @@ input[type='number'] {
   transition: opacity 0.3s ease;
 }
 
-.pesoSaida {
 
-  padding: 5px ;
+
+  
+
+
+.pesoSaida {
+  
+  display: flex;
+  flex-direction: row;
  
 
-}
-
-.pesoSaida-dados {
-
-  padding: 5px ;
-  font-weight: 400;
-  font-size: 44px;
 
 }
-
-.pesoEntrada {
-
-  padding: 5px;
-  display:flex;
-  flex-direction:row;
-  font-family: 'Righteous' cursive;
-  font-size: 22px;
-
-  
-}
-
-
-.pesoEntrada input {
-  
-  display: flex;
-  font-weight: 400;
-  font-family: 'Righteous' cursive;
-  font-size: 40px;
-  
-
-
-}
-
 .pesoSaida input {
 
-  display: flex;
-  font-weight: 400;
-  font-family: 'Righteous' cursive;
-  font-size: 40px;
-
+display: flex;
+justify-content: space-between;
+font-family: 'Sarala', cursive;
+font-weight: 400;
+font-size: 45px;
 
 }
 
-.cmapo {
-
-  padding: 5px;
-}
 
 .transactions li:hover .delete-btn {
   opacity: 1;
-}
-
-
-.testando::input {
-
-  display: flex;
-  font-weight: 400;
-  font-family: 'Righteous' cursive;
-  font-size: 40px;
-
 }
