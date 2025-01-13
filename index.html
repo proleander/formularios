@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BalanSis</title>
+    <title>Pesagem Balan</title>
 
     <link rel ="stylesheet" href="style.css"> <!-- Aqui integramos o nosso CSS -->
 </head>
@@ -23,34 +23,42 @@
         <h1 class="titulo"><center>CONTROLE DE PESAGEM</center></h1>
       
         <p id="subtitulo"><center>Complete as informações do motorista e Caminhão:</center></p> 
-      
+        <p id="subtitulo"><center> </center></p> 
+        <p class="info1"> Rio Grande Comercio de Carnes LTDA  - CNPJ: 07.555.950/0010-12 <br>
+         BR010 Frigorifico Fribal - Coco Grande - CEP: 65909-170 - IMPERATRIZ - MA      </p>
         <!--<img src="\\192.168.32.252\f\T.I imperatriz\app\formularios\Pesagem_Balan\fribal_logo.png" alt="Image" height="62" width="62"> -->
         <br>
     </div>
     <form>
         <fieldset class="grupo">
             <div class="campo">
-                <label for="nome"><strong>Nome Motorista</strong> </label>
-                <input type="text" name="name" id="name" required>
+                <label for="nome"><strong>Nome do Motorista</strong> </label>
+                <input type="text" name="Nome" id="Nome" required>
             </div>
 
             <div class="campo">
                 <label for="setor"><strong>Placa</strong></label>
-                <input type="text" name="setor" id="setor" required>
+                <input type="text" name="Placa" id="Placa" required>
 
                 <div class="data">
                     <label for="data"><strong>Data Entrada</strong></label> 
                     <input type="date" name="Data" id="date" required>
+
+                    <label for="appt">Hora da Entrada do Carro</label>
+
+                    <input type="time" id="appt" name="Hora Entrada" required>
+
+
+
                     
 
-                </label>
             </div>
         </fieldset>
 
         <div class="campo">
 
-            <label for="marca"><strong>Tipo de Carga: </strong></label>
-            <input type="text" name="marca da Impressora" id="marca" required>
+            <label for="marca"><strong>Tipo de Carga </strong></label>
+            <input type="text" name="Tipo de Carga" id="marca" required>
 
         </div>
 
@@ -58,16 +66,19 @@
 
         <label><strong>Selecione o Tipo de caminhão: </strong> </label>
         <label>
-            <input type="radio" name="Tipo de Recarga" value="Tinta-Pigmentada">Truck
+            <input type="radio" name="Tipo de Carro" value="Tuco">Toco
         </label>
         <label>
-            <input type="radio" name="Tipo de Recarga" value="epson">Bi-Truck
+            <input type="radio" name="Tipo de Carro" value="Bi-Truck">Bi-Truck
         </label>
         <label>
-            <input type="radio" name="Tipo de Recarga" value="tonner">Madeira
+            <input type="radio" name="Tipo de Carro" value="Truck">Truck
         </label>
         <label>
-            <input type="radio" name="Tipo de Recarga" value="outro">Diversos
+            <input type="radio" name="Tipo de Carro" value="Carreta">Carreta
+        </label>
+        <label>
+            <input type="radio" name="Tipo de Carro" value="Outro">Outro
         </label>
        </div>
 
@@ -82,57 +93,61 @@
         </select>
 
 
-    </div>   
-    
-   
+    </div>       
 
-    <div class="pesoEntrada">
-
-        <label for="pesoEntrada"><strong>Peso de Entrada: KG </strong></label>
-        <input id="txt1" type="number"  min="0" max="60000" step="0.1" onfocus="calcular()" />
-
-
-        <label for="pesoEntrada"><strong> Saída: KG </strong></label>
-        <input id="txt2" type="number" min="0" max="60000" step="0.1" onblur="calcular()" />
-
-    </div>
+    <fieldset class="container">
 
     <div class="pesoSaida">
 
-        <label class= "pesoSaida" for="peso2"><strong>Peso Liquido: KG  </strong></label>
-        <input id="result" type="text" min="0" max="60000" />
+        <label for="peso2"><strong>Peso de Entrada: </strong></label>
+        <input id="txt1" name="Peso de Entrada" type="text" min="0" max="60000" value="" onfocus="calcular()" required/>
+
+        
+
+    
+
+        <label for="peso1"><strong>Peso de Saída: </strong>  <span class="meukg"> KG </span> </label>
+        <input id="txt2" name="Saída" type="text" min="0" max="60000" value="" onblur="calcular()" required/>
+
+    
+
+   
+
+    
+
+        <label for="peso"><strong> Peso Liquido: KG </strong></label>
+        <input id="result" name="Liquido" type="text" value=""required/>
+
+
+
 
     </div>
-<!--
-    <fieldset class="grupo">
-        <div class="campo">
-            <label><strong>Informe a Pesagem:</strong> </label><br><br>
-            <input type="checkbox" id="tonner1" name="Modelo" value="Tonner 85">
-            <label for="tonner85">Tonner 85</label>
-            <input type="checkbox" id="tonner2" name="Modelo" value="Tonner 83">
-            <label for="tonner83">Tonner 83</label>
-            <input type="checkbox" id="tonner3" name="Modelo" value="Tonner Brother">
-            <label for="tonnerBrtoher">Tonner Brother</label>
-            <input type="checkbox" id="tinta1" name="Modelo" value="Pigmentada">
-            <label for="pigmentada">Tinta Preta Epson</label>
-            <input type="checkbox" id="tinta2" name="Modelo" value="Colorida">
-            <label for="colorida">Tinta Colorida Epson</label>
-        </div>
-        <div class="campo">
 
-            -->
-           
+
+</fieldset>
+
+  
+            <label for="appt">Hora de saída do Carro</label>
+
+            <input type="time" id="appt" name="Hora Saída" required>
+
             <button onclick="window.print()">Imprimir</button>     <!-- Comando para imprimir formulário  ou a página web -->
         </div>
+
+        <div class="campo">
+            <label for="nome"><strong>Responsável pela Pesagem:</strong> </label>
+            <input type="text" name="Responsavel" id="Responsavel" required>
+        </div>
+
     </fieldset>
-    <button class="btn" type="submit">Enviar Pesagem</button>   <!-- -->
+    <button class="btn" id="submit" type="submit">Enviar Solicitação</button>   <!-- -->
 
     </form>
 
-    <script src="script.js"></script>
+   
     <!-- <button class="button" value="Print this page" onClick="window.print()">Imprimir </button>   -->
    
 <!--<button onclick="window.print()">Imprimir</button>-->
-    
+<script src="script.js"></script>
 </body>
 </html>
